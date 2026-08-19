@@ -15,7 +15,7 @@ import RevenueCat
     public typealias DeferredPromotionalPurchaseBlock = (@escaping PurchaseCompletedBlock) -> Void
     typealias HybridResponseBlock = ([String: Any]?, ErrorContainer?) -> Void
 
-    var updatedCustomerInfoCallbackID: String!
+    var updatedCustomerInfoCallbackID: String?
     var shouldPurchasePromoProductCallbackID: String?
     var defermentBlocks: [DeferredPromotionalPurchaseBlock] = []
 
